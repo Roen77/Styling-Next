@@ -16,10 +16,13 @@ function TailwindCSS() {
         >
           Business
         </a>
-        <ul className="flex text-dark-gray/60 max-laptop:hidden">
+        <ul className="flex  max-laptop:hidden">
           {menuList.map((menu, i) => (
             <li key={i}>
-              <a className="p-[20px]" href="#">
+              <a
+                className="p-[20px] text-dark-gray/60 hover:text-dark-gray/100"
+                href="#"
+              >
                 {menu}
               </a>
             </li>
