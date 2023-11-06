@@ -7,11 +7,33 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      tablet: "640px",
+      // => @media (min-width: 640px) { ... }
+
+      laptop: "990px",
+      // => @media (min-width: 990px) { ... }
+
+      desktop: "1280px",
+      // => @media (min-width: 1280px) { ... }
+    },
+
+    container: {
+      center: true,
+      padding: "1.875rem",
+    },
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      padding: {
+        "30": "1.875rem",
+      },
+      colors: {
+        "primary-black": "#333",
+        "dark-gray": "#222",
+        "button-black": "#1a1b1f",
+      },
+      letterSpacing: {
+        wide: "0.0625rem",
+        widest: "0.125em",
       },
     },
   },
