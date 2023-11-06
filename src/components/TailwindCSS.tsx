@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Image from "next/image";
+import { menuList } from "@/utils/menu";
 
 function TailwindCSS() {
   const [showDropMenu, setShowDropMenu] = useState(false);
@@ -16,31 +17,13 @@ function TailwindCSS() {
           Business
         </a>
         <ul className="flex text-dark-gray/60 max-laptop:hidden">
-          <li>
-            <a className="p-[20px]" href="#">
-              ABOUT
-            </a>
-          </li>
-          <li>
-            <a className="p-[20px]" href="#">
-              WORK
-            </a>
-          </li>
-          <li>
-            <a className="p-[20px]" href="#">
-              TEAM
-            </a>
-          </li>
-          <li>
-            <a className="p-[20px]" href="#">
-              BLOG
-            </a>
-          </li>
-          <li>
-            <a className="p-[20px]" href="#">
-              CONTACT
-            </a>
-          </li>
+          {menuList.map((menu, i) => (
+            <li key={i}>
+              <a className="p-[20px]" href="#">
+                {menu}
+              </a>
+            </li>
+          ))}
         </ul>
         <div>
           <button className="py-[12px] px-[25px] bg-button-black text-white tracking-widest max-laptop:hidden">
@@ -63,31 +46,13 @@ function TailwindCSS() {
             showDropMenu ? "block" : "hidden"
           }`}
         >
-          <li>
-            <a className="p-[20px] flex justify-center w-full" href="#">
-              ABOUT
-            </a>
-          </li>
-          <li>
-            <a className="p-[20px] flex justify-center w-full" href="#">
-              WORK
-            </a>
-          </li>
-          <li>
-            <a className="p-[20px] flex justify-center w-full" href="#">
-              TEAM
-            </a>
-          </li>
-          <li>
-            <a className="p-[20px] flex justify-center w-full" href="#">
-              BLOG
-            </a>
-          </li>
-          <li>
-            <a className="p-[20px] flex justify-center w-full" href="#">
-              CONTACT
-            </a>
-          </li>
+          {menuList.map((menu, i) => (
+            <li key={i}>
+              <a className="p-[20px] flex justify-center w-full" href="#">
+                {menu}
+              </a>
+            </li>
+          ))}
         </ul>
       </header>
       <main className="min-h-screen">
