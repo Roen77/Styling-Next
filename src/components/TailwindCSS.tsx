@@ -1,5 +1,3 @@
-"use client";
-
 import { useState } from "react";
 import Image from "next/image";
 
@@ -61,7 +59,7 @@ function TailwindCSS() {
           </button>
         </div>
         <ul
-          className={`absolute left-0 w-full z-50 bg-white top-[96px] shadow-md ${
+          className={`absolute left-0 w-full z-50 bg-white top-[96px] laptop:hidden shadow-md ${
             showDropMenu ? "block" : "hidden"
           }`}
         >
