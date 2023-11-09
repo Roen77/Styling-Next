@@ -14,7 +14,7 @@ function TailwindCSS() {
           className="font-semibold text-2xl border-b-4 border-b-black"
           href="#"
         >
-          Business
+          Business TailwindCSS
         </a>
         <ul className="flex  max-laptop:hidden">
           {menuList.map((menu, i) => (

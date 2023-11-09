@@ -14,7 +14,7 @@ function CSSInJs() {
       <Container>
         <Header>
           <a className="logo" href="#">
-            Business
+            Business Styled Components
           </a>
           <ul className="menu">
             {menuList.map((menu, i) => (

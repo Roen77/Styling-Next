@@ -16,10 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko">
-      {/* <body className={montserrat.className}>{children}</body> */}
-      <body className={montserrat.className}>
-        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
-      </body>
+      <body className={montserrat.className}>{children}</body>
     </html>
   );
 }
