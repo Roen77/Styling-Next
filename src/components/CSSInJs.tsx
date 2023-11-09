@@ -3,6 +3,7 @@ import { menuList } from "@/utils/menu";
 import Image from "next/image";
 import React, { useState } from "react";
 import styled, { ThemeProvider } from "styled-components";
+
 function CSSInJs() {
   const [showDropMenu, setShowDropMenu] = useState(false);
   const onClickDropMenu = () => {
@@ -46,12 +47,11 @@ function CSSInJs() {
         <MainContainer>
           <div className="banner">
             <Image
-              width={0}
-              height={0}
+              fill
               sizes="100vw"
-              style={{ width: "100%", height: "auto" }}
               src="https://fastly.picsum.photos/id/927/1000/400.jpg?hmac=OOWStXg293Wv5OthcN_wMmWhKQBO3UOx2yCkOrEdsPc"
               alt="banner"
+              style={{ padding: "0 30px" }}
             />
           </div>
           <Contents>
@@ -75,8 +75,8 @@ function CSSInJs() {
               <div className="right image flex-center">
                 <Image
                   src="https://fastly.picsum.photos/id/80/700/400.jpg?hmac=zyKxY2cGPjTUBYJ3Y0_3oNcSmGNT-ZikOXPr6UAbfHM"
-                  width={0}
-                  height={0}
+                  width={700}
+                  height={400}
                   sizes="100vw"
                   style={{ width: "100%", height: "auto" }}
                   alt="right image"
@@ -125,6 +125,7 @@ const Container = styled.div`
     align-items: center;
   }
 `;
+
 const Header = styled.header`
   padding: 30px 50px;
   display: flex;
@@ -195,7 +196,10 @@ const MobileMenu = styled.ul`
 const MainContainer = styled.main`
   min-height: 100vh;
   .banner {
-    padding: 0 30px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 40%;
   }
 `;
 
