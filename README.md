@@ -12,7 +12,9 @@
 
 - feat/Github-Actions
 
-  배포 자동화를 위한 Github-Acttions 셋팅 작업
+  배포 자동화를 위한 Github-Actions next.config.js 설정 작업
+
+  > [해당 링크 참고](https://nextjs.org/docs/app/building-your-application/deploying/static-exports)
 
 - feat/Router
 
