@@ -1,8 +1,8 @@
 "use client";
 
-import CSSInJs from "@/components/cssInJs";
-import TailwindCSS from "@/components/tailwindCSS";
+import CSSInJs from "@/components/cssInJsComponent";
+import TailwindCSS from "@/components/tailwindCSSComponent";
 
 export default function Home() {
-  return <TailwindCSS />;
+  return <CSSInJs />;
 }
