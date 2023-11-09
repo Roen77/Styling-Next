@@ -59,14 +59,13 @@ function TailwindCSS() {
         </ul>
       </header>
       <main className="min-h-screen">
-        <div className="px-30">
+        <div className="relative pb-[40%]">
           <Image
-            width={0}
-            height={0}
+            fill
             sizes="100vw"
-            style={{ width: "100%", height: "auto" }}
             src="https://fastly.picsum.photos/id/927/1000/400.jpg?hmac=OOWStXg293Wv5OthcN_wMmWhKQBO3UOx2yCkOrEdsPc"
             alt="banner"
+            style={{ padding: "0 30px" }}
           />
         </div>
         <div className="w-24 min-w-full md:min-w-0 px-30">
