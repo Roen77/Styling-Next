@@ -1,5 +1,3 @@
-import { ThemeProvider } from "styled-components";
-
 const theme = {
   fontSizes: {
     sm: "12px",
